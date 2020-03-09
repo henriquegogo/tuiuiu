@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+html {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5rem;
+  color: #667;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #55A;
+}
+a:hover {
+  color: #667;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+h1 { font-size: 4rem }
+h2 { font-size: 3rem }
+h3 { font-size: 2.5rem }
+h4 { font-size: 2rem }
+h5 { font-size: 1.5rem }
+h6 { font-size: 1rem }
+
+header {
+  background: #EEE;
+  border-bottom: 1px solid #AAA;
+}
+header aside,
+header main {
+  vertical-align: middle;
+}
+footer {
+  background: #EEE;
+  border-top: 1px solid #AAA;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 1rem;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav > ul {
+  display: inline-block;
+}
+nav > ul ul li {
+  position: relative;
+}
+nav ul ul {
+  display: none;
+  position: absolute;
+  text-align: left;
+  background: #FFF;
+  border: 1px solid #AAA;
+  border-bottom: 3px solid #AAA;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav > ul ul li:hover > ul {
+  top: calc(100% - 48px);
+  left: 100%;
+}
+nav ul ul a {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  line-height: 3rem;
+}
+
+aside nav a {
+  display: block;
+  margin: 0;
+  padding: 0 1rem;
+  line-height: 3rem;
+  border-bottom: 1px solid #CCD;
+}
+
+code {
+  display: block;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background: #EEE;
+  border-left: 4px solid #55A;
+}
+blockquote {
+  display: block;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  font-style: italic;
+  border-left: 4px solid #EEE;
+}
+
+::placeholder {
+  color: #999;
+}
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  padding: 0 2rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #55A;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  outline: unset;
+}
+button,
+input[type="button"],
+input[type="submit"] {
+  border-radius: 5px;
+  background: #FFF;
+  border: 1px solid #55A;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  color: #667;
+  border-color: #667;
+}
+input[type="submit"] {
+  color: #FFF;
+  background: #55A;
+}
+input[type="submit"]:hover {
+  color: #FFF;
+  background: #667;
+}
+input[type="reset"] {
+  background: transparent;
+}
+input[type="checkbox"] {
+  margin: 0 10px 0 5px;
+}
+input[type="checkbox"]:before {
+  content: "";
+  display: inline-block;
+  margin: -5px;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #55A;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #55A;
+  border-radius: 5px;
+  background: #FFF;
+}
+input[type="checkbox"]:checked:before {
+  content: "✓";
+  color: #FFF;
+  background: #55A;
+}
+
+label {
+  display: inline-block;
+  padding: 0.5rem 0.25rem;
+  font-size: 0.9rem;
+  vertical-align: top;
+}
+textarea {
+  padding: 0.7rem 0.8rem;
+  font-size: 1rem;
+  color: #667;
+  border-radius: 5px;
+  background: #FFF;
+  border: 1px solid #AAA;
+}
+input[type="text"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="file"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+input[type="week"] {
+  padding: 0.7rem 0.8rem;
+  font-size: 0.9rem;
+  color: #667;
+  vertical-align: middle;
+  border-radius: 5px;
+  background: #FFF;
+  border: 1px solid #AAA;
+}
+select {
+  padding: 0 0.8rem;
+  height: 2.4rem;
+  font-size: 0.9rem;
+  color: #667;
+  border-radius: 5px;
+  background: #FFF;
+  border: 1px solid #AAA;
+}
+
+article {
+  padding: 10px 20px;
+  border: 1px solid #AAA;
+  border-bottom: 3px solid #AAA;
+}
+
+dt {
+  display: inline-block;
+  width: 50%;
+}
+dd {
+  display: inline-block;
+  margin: 0;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #AAA;
+}
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #AAA;
+}
+table tr:last-child td {
+  border-bottom: 3px solid #AAA;
+}
+
+section {
+  margin: 0 auto;
+  padding: 5px 10px;
+  max-width: 1200px;
+}
+aside {
+  display: inline-block;
+  padding: 5px 10px;
+  width: calc(33% - 22px);
+  max-width: 300px;
+  vertical-align: top;
+}
+aside:first-of-type:nth-last-of-type(2),
+aside:first-of-type:nth-last-of-type(2) ~ aside {
+  width: calc(50% - 22px);
+  max-width: none;
+}
+aside:first-of-type:nth-last-of-type(3),
+aside:first-of-type:nth-last-of-type(3) ~ aside {
+  width: calc(33% - 22px);
+  max-width: none;
+}
+aside:first-of-type:nth-last-of-type(4),
+aside:first-of-type:nth-last-of-type(4) ~ aside {
+  width: calc(25% - 23px);
+  max-width: none;
+}
+main {
+  display: inline-block;
+  width: calc(100% - 300px - 44px);
+  padding: 5px 10px;
+  vertical-align: top;
+}
+section aside {
+  max-width: none;
+}
+section main {
+  width: calc(66% - 22px);
+}
+aside > aside,
+aside > main,
+main > aside,
+main > main {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  aside:first-of-type:nth-last-of-type(2),
+  aside:first-of-type:nth-last-of-type(2) ~ aside,
+  aside:first-of-type:nth-last-of-type(3),
+  aside:first-of-type:nth-last-of-type(3) ~ aside,
+  aside:first-of-type:nth-last-of-type(4),
+  aside:first-of-type:nth-last-of-type(4) ~ aside,
+  aside {
+    width: calc(50% - 22px);
+  }
+  main,
+  section main {
+    width: calc(50% - 22px);
+  }
+}
+@media (max-width: 500px) {
+  aside:first-of-type:nth-last-of-type(2),
+  aside:first-of-type:nth-last-of-type(2) ~ aside,
+  aside:first-of-type:nth-last-of-type(3),
+  aside:first-of-type:nth-last-of-type(3) ~ aside,
+  aside:first-of-type:nth-last-of-type(4),
+  aside:first-of-type:nth-last-of-type(4) ~ aside,
+  aside {
+    width: calc(100% - 22px);
+  }
+  main,
+  section main {
+    width: calc(100% - 22px);
+  }
+}
