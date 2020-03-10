@@ -1,53 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Tuiuiu</title>
+        <title>Components</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
         <link rel="stylesheet" href="tuiuiu.css">
     </head>
     <body>
         <header>
-            <h1>This is the header</h1>
-        </header>
-        <aside>
+            <img src="logo.png" alt="Logo" />
+            <div></div>
             <nav>
-                <a href='#'>Link 1</a><br />
-                Link 2
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
             </nav>
-        </aside>
+        </header>
         <main>
-            Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit.  
-
-            <br />
-
-            <table>
-                <col>
-                coluna1
-                coluna1
-                coluna1
-                </col>
-                <col>
-                coluna2
-                </col>
-                <col>
-                coluna3
-                coluna3
-                coluna3
-                coluna3
-                </col>
-            </table>
+            Main content. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit.
         </main>
-
-        <article>article</article>
-        <aside>aside</aside>
-        <nav>nav</nav>
-        <section>section</section>
-
-        <address>address</address>
-        <header>header</header>
-        <footer>footer</footer>
-
-        <h1>h1</h1> <h2>h2</h2> <h3>h3</h3> <h4>h4</h4> <h5>h5</h5> <h6>h6</h6>
+        <section>
+            <div>Box</div>
+            <div>Box</div>
+        </section>
+        <section>
+            <aside>
+                Column of two
+            </aside>
+            <aside>
+                Column of two
+            </aside>
+        </section>
+        <section>
+            <aside>
+                Column of three
+            </aside>
+            <aside>
+                Column of three and in this case we have more content and lines<br />
+                More lines and more things<br />
+                Like these things.
+            </aside>
+            <aside>
+                Column of three
+            </aside>
+        </section>
+        <section>
+            <aside>
+                Column
+            </aside>
+            <main>
+                Main content. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit. Lorem ipsum sicut dixit.
+            </main>
+        </section>
+        <section>
+            <main>
+                Main content
+            </main>
+            <aside>
+                Column
+            </aside>
+        </section>
+        <p>Paragraph. Paragraph. Paragraph. Paragraph. Paragraph. Paragraph. Paragraph. Paragraph. Paragraph. Paragraph.</p>
+        <a>Anchor</a>
+        <em>Emphasis</em>
+        <small>Small</small>
+        <strong>Strong</strong>
+        <u>Underline</u>
+        <h1>Heading</h1>
+        <h2>Heading</h2>
+        <h3>Heading</h3>
+        <h4>Heading</h4>
+        <h5>Heading</h5>
+        <h6>Heading</h6>
+        <blockquote>
+            Blockquote. Blockquote. Blockquote. Blockquote. Blockquote. Blockquote. Blockquote. Blockquote. Blockquote. Blockquote.
+        </blockquote>
+        <input type="submit" value="Submit button" />
+        <button>Outlined button</button>
+        <input type="button" value="Input button" />
+        <input type="reset" value="Reset button" />
+        <ul>
+            <li>Unordered list item 1</li>
+            <li>Unordered list item 2</li>
+        </ul>
+        <ol>
+            <li>Ordered list item 1</li>
+            <li>Ordered list item 2</li>
+        </ol>
+        <dl>
+            <dt>Description list item 1</dt>
+            <dd>Description list item 1.1</dd>
+        </dl>
+        <form>
+            <fieldset>
+                <label>
+                    Name
+                    <input type="text" placeholder="Name text input">
+                </label>
+            </fieldset>
+            <label>
+                Select item
+                <select>
+                    <option>Item 1</option>
+                    <option>Item 2</option>
+                    <option>Item 3</option>
+                    <option>Item 4</option>
+                </select>
+            </label>
+            <textarea placeholder="Type your text"></textarea>
+            <br />
+            <input type="submit" />
+            <label>
+                <input type="checkbox" />
+                Send a copy to yourself
+            </label>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>27</td>
+                    <td>john@doe.com</td>
+                </tr>
+                <tr>
+                    <td>Foo Bar</td>
+                    <td>25</td>
+                    <td>foo@bar.com</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
