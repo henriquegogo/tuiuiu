@@ -77,3 +77,73 @@ section > * {
 main {
     flex: 3;
 }
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+	padding: 0 2rem;
+	line-height: 2.4rem;
+	font-size: 0.7rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #55A;
+	cursor: pointer;
+	border: none;
+}
+button,
+input[type="button"],
+input[type="submit"] {
+	border-radius: 5px;
+	background: #FFF;
+	border: 1px solid #55A;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+	color: #667;
+	border-color: #667;
+}
+input[type="submit"] {
+	color: #FFF;
+	background: #55A;
+}
+input[type="submit"]:hover {
+	color: #FFF;
+	background: #667;
+}
+input[type="reset"] {
+	background: transparent;
+}
+
+textarea {
+	padding: 0.7rem 0.8rem;
+	font-size: 0.9rem;
+	color: #667;
+	border-radius: 5px;
+	background: #FFF;
+	border: 1px solid #AAA;
+}
+input[type="text"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="file"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+input[type="week"] {
+	padding: 0 0.8rem;
+	line-height: 2.4rem;
+	font-size: 0.9rem;
+	color: #667;
+	border-radius: 5px;
+	background: #FFF;
+	border: 1px solid #AAA;
+}
