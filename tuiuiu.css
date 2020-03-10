@@ -138,9 +138,14 @@ input[type="reset"] {
 	background: transparent;
 }
 
+label {
+	display: inline-block;
+    padding: 0.5rem 0.25rem;
+	font-size: 0.9rem;
+}
 textarea {
 	padding: 0.7rem 0.8rem;
-	font-size: 0.9rem;
+	font-size: 1.1rem;
 	color: #667;
 	border-radius: 5px;
 	background: #FFF;
@@ -162,6 +167,15 @@ input[type="url"],
 input[type="week"] {
 	padding: 0 0.8rem;
 	line-height: 2.4rem;
+	font-size: 0.9rem;
+	color: #667;
+	border-radius: 5px;
+	background: #FFF;
+	border: 1px solid #AAA;
+}
+select {
+	padding: 0 0.8rem;
+	height: 2.4rem;
 	font-size: 0.9rem;
 	color: #667;
 	border-radius: 5px;
