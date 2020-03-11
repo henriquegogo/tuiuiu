@@ -59,6 +59,22 @@ header + * {
   margin-top: 3rem;
 }
 
+body > aside {
+  display: inline-block;
+  margin-left: calc((99vw - 100%) / -2);
+  width: 220px;
+  vertical-align: top;
+}
+body > aside + main {
+  display: inline-block;
+  width: calc(99vw - 500px);
+  vertical-align: top;
+}
+body > main + aside {
+  margin-left: 0;
+  margin-right: calc((99vw - 100%) / -2);
+}
+
 section {
   display: flex;
   flex-wrap: wrap;
@@ -72,29 +88,34 @@ body > section {
     padding: 0 calc(50vw - 50%);
   }
 }
-section > * {
+section > aside {
   flex: 1;
   padding: 1rem;
 }
-main {
+section > main {
   flex: 3;
+  padding: 1rem;
+}
+section > div {
+  flex-basis: 100%;
 }
 @media (min-width: 1200px) {
-  section > * {
+  section > aside,
+  section > main {
     padding: 1rem 0;
   }
 }
 @media (max-width: 800px) {
-  section > * {
+  section > aside {
     flex-basis: calc(50% - 2rem);
   }
-  main {
+  section > main {
     flex-basis: 100%;
   }
 }
 @media (max-width: 400px) {
-  section > * {
-    flex-basis: calc(100%);
+  section > aside {
+    flex-basis: 100%;
   }
 }
 
