@@ -1,155 +1,156 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
 
 html {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5rem;
-    color: #667;
-    background: #EEE;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5rem;
+  color: #667;
+  background: #EEE;
 }
 body {
-    margin: 0 auto;
-    max-width: 1200px;
-    overflow-x: hidden;
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow-x: hidden;
 }
 a {
-    text-decoration: none;
-	color: #55A;
+  text-decoration: none;
+  color: #55A;
 }
 a:hover {
-	color: #667;
+  color: #667;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 header {
-    position: fixed;
-    display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
-    line-height: 3rem;
-    border-bottom: 1px solid #AAA;
-    background: #EEE;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 3rem;
+  border-bottom: 1px solid #AAA;
+  background: #EEE;
 }
 header > * {
-    flex: auto;
+  flex: auto;
 }
 header > :first-child {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 header > :last-child {
-    padding-right: 1rem;
-    text-align: right;
+  padding-right: 1rem;
+  text-align: right;
 }
 @media (min-width: 1200px) {
-    header > :first-child {
-        margin-left: calc((100% - 1200px) / 2);
-        padding-left: 0;
-    }
-    header > :last-child {
-        margin-right: calc((100% - 1200px) / 2);
-        padding-right: 0;
-    }
+  header > :first-child {
+    margin-left: calc((100% - 1200px) / 2);
+    padding-left: 0;
+  }
+  header > :last-child {
+    margin-right: calc((100% - 1200px) / 2);
+    padding-right: 0;
+  }
 }
 header nav a {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 header + * {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 section {
-    display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 body > section {
-    background: #FFF;
+  background: #FFF;
 }
 @media (min-width: 1200px) {
-    body > section {
-        margin: 0 calc(-1 * (50vw - 50%));
-        padding: 0 calc(50vw - 50%);
-    }
+  body > section {
+    margin: 0 calc(-1 * (50vw - 50%));
+    padding: 0 calc(50vw - 50%);
+  }
 }
 section > * {
-    flex: 1;
-    padding: 1rem;
+  flex: 1;
+  padding: 1rem;
 }
 main {
-    flex: 3;
+  flex: 3;
 }
 @media (min-width: 1200px) {
-    section > * {
-        padding: 1rem 0;
-    }
+  section > * {
+    padding: 1rem 0;
+  }
 }
 @media (max-width: 800px) {
-    section > * {
-		flex-basis: calc(50% - 2rem);
-    }
-	main {
-		flex-basis: 100%;
-	}
+  section > * {
+    flex-basis: calc(50% - 2rem);
+  }
+  main {
+    flex-basis: 100%;
+  }
 }
 @media (max-width: 400px) {
-    section > * {
-		flex-basis: calc(100%);
-    }
+  section > * {
+    flex-basis: calc(100%);
+  }
 }
 
 button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-	padding: 0 2rem;
-	line-height: 2.4rem;
-	font-size: 0.7rem;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #55A;
-	cursor: pointer;
-	border: none;
-	outline: unset;
+  padding: 0 2rem;
+  line-height: 2.4rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #55A;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  outline: unset;
 }
 button,
 input[type="button"],
 input[type="submit"] {
-	border-radius: 5px;
-	background: #FFF;
-	border: 1px solid #55A;
+  border-radius: 5px;
+  background: #FFF;
+  border: 1px solid #55A;
 }
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-	color: #667;
-	border-color: #667;
+  color: #667;
+  border-color: #667;
 }
 input[type="submit"] {
-	color: #FFF;
-	background: #55A;
+  color: #FFF;
+  background: #55A;
 }
 input[type="submit"]:hover {
-	color: #FFF;
-	background: #667;
+  color: #FFF;
+  background: #667;
 }
 input[type="reset"] {
-	background: transparent;
+  background: transparent;
 }
 
 label {
-	display: inline-block;
-    padding: 0.5rem 0.25rem;
-	font-size: 0.9rem;
+  display: inline-block;
+  padding: 0.5rem 0.25rem;
+  font-size: 0.9rem;
 }
 textarea {
-	padding: 0.7rem 0.8rem;
-	font-size: 1.1rem;
-	color: #667;
-	border-radius: 5px;
-	background: #FFF;
-	border: 1px solid #AAA;
+  padding: 0.7rem 0.8rem;
+  font-size: 1rem;
+  color: #667;
+  border-radius: 5px;
+  background: #FFF;
+  border: 1px solid #AAA;
 }
 input[type="text"],
 input[type="date"],
@@ -165,20 +166,20 @@ input[type="tel"],
 input[type="text"],
 input[type="url"],
 input[type="week"] {
-	padding: 0 0.8rem;
-	line-height: 2.4rem;
-	font-size: 0.9rem;
-	color: #667;
-	border-radius: 5px;
-	background: #FFF;
-	border: 1px solid #AAA;
+  padding: 0.7rem 0.8rem;
+  font-size: 0.9rem;
+  color: #667;
+  vertical-align: middle;
+  border-radius: 5px;
+  background: #FFF;
+  border: 1px solid #AAA;
 }
 select {
-	padding: 0 0.8rem;
-	height: 2.4rem;
-	font-size: 0.9rem;
-	color: #667;
-	border-radius: 5px;
-	background: #FFF;
-	border: 1px solid #AAA;
+  padding: 0 0.8rem;
+  height: 2.4rem;
+  font-size: 0.9rem;
+  color: #667;
+  border-radius: 5px;
+  background: #FFF;
+  border: 1px solid #AAA;
 }
