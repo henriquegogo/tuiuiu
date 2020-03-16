@@ -100,9 +100,11 @@ section > div {
   flex-basis: 100%;
 }
 @media (min-width: 1200px) {
-  section > aside,
-  section > main {
-    padding: 1rem 0;
+  section > :first-child {
+    padding-left: 0;
+  }
+  section > :last-child {
+    padding-right: 0;
   }
 }
 @media (max-width: 800px) {
@@ -117,6 +119,13 @@ section > div {
   section > aside {
     flex-basis: 100%;
   }
+}
+
+aside nav a {
+  display: block;
+  padding: 0 1rem;
+  line-height: 3rem;
+  border-bottom: 1px solid #CCD;
 }
 
 button,
