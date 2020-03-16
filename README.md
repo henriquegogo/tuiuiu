@@ -1,2 +1,2 @@
-# tuiuiu
-CSS only components
+# Tuiuiu
+Classless CSS toolkit

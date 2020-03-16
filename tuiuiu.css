@@ -4,12 +4,9 @@ html {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5rem;
   color: #667;
-  background: #EEE;
 }
 body {
-  margin: 0 auto;
-  max-width: 1200px;
-  overflow-x: hidden;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -31,40 +28,35 @@ h5 { font-size: 1.5rem }
 h6 { font-size: 1rem }
 
 header {
+  background: #EEE;
+}
+body > header {
   position: fixed;
-  display: flex;
   top: 0;
   left: 0;
   right: 0;
   line-height: 3rem;
   border-bottom: 1px solid #AAA;
-  background: #EEE;
 }
-header > * {
+body > header > section > * {
   flex: auto;
 }
-header > :first-child {
+body > header > section > :first-child {
   padding-left: 1rem;
 }
-header > :last-child {
+body > header > section > :last-child {
   padding-right: 1rem;
   text-align: right;
 }
-@media (min-width: 1200px) {
-  header > :first-child {
-    margin-left: calc((100% - 1200px) / 2);
-    padding-left: 0;
-  }
-  header > :last-child {
-    margin-right: calc((100% - 1200px) / 2);
-    padding-right: 0;
-  }
-}
-header nav a {
+body > header nav a {
   margin-left: 2rem;
 }
-header + * {
+body > header + * {
   margin-top: 3rem;
+}
+
+footer {
+  background: #EEE;
 }
 
 body > aside {
@@ -87,14 +79,14 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
+body > section,
+header > section {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow-x: hidden;
+}
 body > section {
   background: #FFF;
-}
-@media (min-width: 1200px) {
-  body > section {
-    margin: 0 calc(-1 * (50vw - 50%));
-    padding: 0 calc(50vw - 50%);
-  }
 }
 section > aside {
   flex: 1;
