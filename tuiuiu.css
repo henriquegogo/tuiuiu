@@ -19,8 +19,16 @@ a:hover {
   color: #667;
 }
 h1, h2, h3, h4, h5, h6 {
+  margin: 0;
   font-weight: normal;
+  line-height: 1.5em;
 }
+h1 { font-size: 4rem }
+h2 { font-size: 3rem }
+h3 { font-size: 2.5rem }
+h4 { font-size: 2rem }
+h5 { font-size: 1.5rem }
+h6 { font-size: 1rem }
 
 header {
   position: fixed;
@@ -128,11 +136,27 @@ aside nav a {
   border-bottom: 1px solid #CCD;
 }
 
+code {
+  display: block;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background: #EEE;
+  border-left: 4px solid #55A;
+}
+blockquote {
+  display: block;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  font-style: italic;
+  border-left: 4px solid #EEE;
+}
+
 button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
   padding: 0 2rem;
+  height: 2.4rem;
   line-height: 2.4rem;
   font-size: 0.7rem;
   font-weight: bold;
