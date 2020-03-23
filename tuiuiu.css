@@ -260,3 +260,30 @@ select {
   background: #FFF;
   border: 1px solid #AAA;
 }
+
+dt {
+  display: inline-block;
+  width: 50%;
+}
+dd {
+  display: inline-block;
+  margin: 0;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #AAA;
+}
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #AAA;
+}
+table tr:last-child td {
+  border-bottom: 3px solid #AAA;
+}
