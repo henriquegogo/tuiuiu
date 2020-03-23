@@ -261,6 +261,12 @@ select {
   border: 1px solid #AAA;
 }
 
+article {
+  padding: 10px 20px;
+  border: 1px solid #AAA;
+  border-bottom: 3px solid #AAA;
+}
+
 dt {
   display: inline-block;
   width: 50%;
