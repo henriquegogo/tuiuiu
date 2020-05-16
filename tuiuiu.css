@@ -28,64 +28,6 @@ h4 { font-size: 2rem }
 h5 { font-size: 1.5rem }
 h6 { font-size: 1rem }
 
-header {
-  background: #EEE;
-}
-body > header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  line-height: 3rem;
-  border-bottom: 1px solid #AAA;
-}
-body > header > section > * {
-  flex: auto;
-}
-body > header > section > :first-child {
-  padding-left: 1rem;
-}
-body > header > section > :last-child {
-  padding-right: 1rem;
-  text-align: right;
-}
-body > header nav a {
-  margin-left: 2rem;
-}
-body > header nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-body > header nav > ul {
-  display: inline-block;
-}
-body > header nav > ul ul li {
-  position: relative;
-}
-body > header nav ul ul {
-  display: none;
-  position: absolute;
-  text-align: left;
-  background: #FFF;
-  border: 1px solid #AAA;
-  border-bottom: 3px solid #AAA;
-}
-body > header nav ul li:hover > ul {
-  display: block;
-}
-body > header nav > ul ul li:hover > ul {
-  top: calc(100% - 48px);
-  right: 100%;
-}
-body > header nav ul ul a {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-body > header + * {
-  margin-top: 3rem;
-}
-
 footer {
   background: #EEE;
 }
@@ -151,6 +93,65 @@ section > div {
     flex-basis: 100%;
   }
 }
+
+header {
+  background: #EEE;
+}
+body > header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 3rem;
+  border-bottom: 1px solid #AAA;
+}
+body > header > section > * {
+  flex: auto;
+}
+body > header > section > :first-child {
+  padding-left: 1rem;
+}
+body > header > section > :last-child {
+  padding-right: 1rem;
+  text-align: right;
+}
+body > header nav a {
+  margin-left: 2rem;
+}
+body > header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body > header nav > ul {
+  display: inline-block;
+}
+body > header nav > ul ul li {
+  position: relative;
+}
+body > header nav ul ul {
+  display: none;
+  position: absolute;
+  text-align: left;
+  background: #FFF;
+  border: 1px solid #AAA;
+  border-bottom: 3px solid #AAA;
+}
+body > header nav ul li:hover > ul {
+  display: block;
+}
+body > header nav > ul ul li:hover > ul {
+  top: calc(100% - 48px);
+  right: 100%;
+}
+body > header nav ul ul a {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+body > header + * {
+  margin-top: 3rem;
+}
+
 
 aside nav a {
   display: block;
