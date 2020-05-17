@@ -31,6 +31,12 @@ h6 { font-size: 1rem }
 footer {
   background: #EEE;
 }
+body > footer > section > :last-child {
+  text-align: right;
+}
+body > footer > section > :first-child {
+  text-align: left;
+}
 
 body > aside {
   display: inline-block;
@@ -53,7 +59,8 @@ section {
   flex-wrap: wrap;
 }
 body > section,
-header > section {
+header > section,
+footer > section {
   margin: 0 auto;
   max-width: 1200px;
   overflow-x: hidden;
@@ -108,12 +115,13 @@ body > header {
 body > header > section > * {
   flex: auto;
 }
-body > header > section > :first-child {
-  padding-left: 1rem;
-}
 body > header > section > :last-child {
   padding-right: 1rem;
   text-align: right;
+}
+body > header > section > :first-child {
+  padding-left: 1rem;
+  text-align: left;
 }
 body > header nav a {
   margin-left: 2rem;
