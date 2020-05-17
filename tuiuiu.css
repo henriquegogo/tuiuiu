@@ -63,11 +63,11 @@ body > section {
 }
 section > aside {
   flex: 1;
-  padding: 1rem;
+  margin: 1rem;
 }
 section > main {
   flex: 3;
-  padding: 1rem;
+  margin: 1rem;
 }
 section > div {
   flex-basis: 100%;
@@ -82,15 +82,15 @@ section > div {
 }
 @media (max-width: 800px) {
   section > aside {
-    flex-basis: calc(50% - 2rem);
+    flex-basis: calc(50% - 2rem) !important;
   }
   section > main {
-    flex-basis: 100%;
+    flex-basis: 100% !important;
   }
 }
 @media (max-width: 400px) {
   section > aside {
-    flex-basis: 100%;
+    flex-basis: 100% !important;
   }
 }
 
