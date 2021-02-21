@@ -237,6 +237,12 @@ main {
   padding: 5px 10px;
   vertical-align: top;
 }
+:not(section) aside {
+  max-width: 300px;
+}
+:not(section) main {
+  width: calc(100% - 300px - 44px);
+}
 
 @media (max-width: 800px) {
   aside,
