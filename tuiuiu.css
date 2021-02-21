@@ -28,120 +28,26 @@ h4 { font-size: 2rem }
 h5 { font-size: 1.5rem }
 h6 { font-size: 1rem }
 
-footer {
-  font-size: 0.9rem;
-  background: #EEE;
-}
-body > footer > section > :last-child {
-  text-align: right;
-}
-body > footer > section > :first-child {
-  text-align: left;
-}
-
-body > aside {
-  display: inline-block;
-  margin-left: calc((99vw - 100%) / -2);
-  width: 220px;
-  vertical-align: top;
-}
-body > aside + main {
-  display: inline-block;
-  width: calc(99vw - 500px);
-  vertical-align: top;
-}
-body > main + aside {
-  margin-left: 0;
-  margin-right: calc((99vw - 100%) / -2);
-}
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-}
-body > section,
-header > section,
-footer > section {
-  margin: 0 auto;
-  max-width: 1200px;
-  overflow-x: hidden;
-}
-body > section {
-  background: #FFF;
-}
-section > aside {
-  flex: 1;
-  margin: 1rem;
-}
-section > main {
-  flex: 3;
-  margin: 1rem;
-}
-section > div {
-  flex-basis: 100%;
-}
-@media (min-width: 1200px) {
-  section > :first-child {
-    padding-left: 0;
-  }
-  section > :last-child {
-    padding-right: 0;
-  }
-}
-@media (max-width: 800px) {
-  section > aside {
-    flex-basis: calc(50% - 2rem) !important;
-  }
-  section > main {
-    flex-basis: 100% !important;
-  }
-}
-@media (max-width: 400px) {
-  section > aside {
-    flex-basis: 100% !important;
-  }
-}
-
 header {
   background: #EEE;
-}
-body > header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  line-height: 3rem;
   border-bottom: 1px solid #AAA;
 }
-body > header > section {
-  align-items: center;
+
+nav a {
+  margin: 0 1rem;
 }
-body > header > section > * {
-  flex: auto;
-}
-body > header > section > :last-child {
-  padding-right: 1rem;
-  text-align: right;
-}
-body > header > section > :first-child {
-  padding-left: 1rem;
-  text-align: left;
-}
-body > header nav a {
-  margin-left: 2rem;
-}
-body > header nav ul {
+nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-body > header nav > ul {
+nav > ul {
   display: inline-block;
 }
-body > header nav > ul ul li {
+nav > ul ul li {
   position: relative;
 }
-body > header nav ul ul {
+nav ul ul {
   display: none;
   position: absolute;
   text-align: left;
@@ -149,24 +55,22 @@ body > header nav ul ul {
   border: 1px solid #AAA;
   border-bottom: 3px solid #AAA;
 }
-body > header nav ul li:hover > ul {
+nav ul li:hover > ul {
   display: block;
 }
-body > header nav > ul ul li:hover > ul {
+nav > ul ul li:hover > ul {
   top: calc(100% - 48px);
-  right: 100%;
+  left: 100%;
 }
-body > header nav ul ul a {
+nav ul ul a {
   margin-left: 2rem;
   margin-right: 2rem;
+  line-height: 3rem;
 }
-body > header + * {
-  margin-top: 3rem;
-}
-
 
 aside nav a {
   display: block;
+  margin: 0;
   padding: 0 1rem;
   line-height: 3rem;
   border-bottom: 1px solid #CCD;
@@ -308,4 +212,28 @@ table td {
 }
 table tr:last-child td {
   border-bottom: 3px solid #AAA;
+}
+
+section {
+  margin: 0 auto;
+  padding: 5px 10px;
+  max-width: 1200px;
+}
+aside {
+  display: inline-block;
+  width: calc(33% - 22px);
+  padding: 5px 10px;
+  vertical-align: top;
+}
+aside.half {
+  width: calc(50% - 22px);
+}
+aside.quarter {
+  width: calc(25% - 23px);
+}
+main {
+  display: inline-block;
+  width: calc(66% - 22px);
+  padding: 5px 10px;
+  vertical-align: top;
 }
