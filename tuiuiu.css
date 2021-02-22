@@ -257,6 +257,13 @@ section aside {
 section main {
   width: calc(66% - 22px);
 }
+aside > aside,
+aside > main,
+main > aside,
+main > main {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 @media (max-width: 800px) {
   aside:first-of-type:nth-last-of-type(2),
