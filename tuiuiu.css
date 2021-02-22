@@ -139,6 +139,31 @@ input[type="submit"]:hover {
 input[type="reset"] {
   background: transparent;
 }
+input[type="checkbox"] {
+  margin: 0 10px 0 5px;
+}
+input[type="checkbox"]:before {
+  content: "";
+  display: inline-block;
+  margin: -5px;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #55A;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #55A;
+  border-radius: 5px;
+  background: #FFF;
+}
+input[type="checkbox"]:checked:before {
+  content: "✓";
+  color: #FFF;
+  background: #55A;
+}
 
 label {
   display: inline-block;
