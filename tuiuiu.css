@@ -32,6 +32,10 @@ header {
   background: #EEE;
   border-bottom: 1px solid #AAA;
 }
+header aside,
+header main {
+  vertical-align: middle;
+}
 
 nav a {
   margin: 0 1rem;
@@ -229,14 +233,17 @@ aside {
 aside:first-of-type:nth-last-of-type(2),
 aside:first-of-type:nth-last-of-type(2) ~ aside {
   width: calc(50% - 22px);
+  max-width: none;
 }
 aside:first-of-type:nth-last-of-type(3),
 aside:first-of-type:nth-last-of-type(3) ~ aside {
   width: calc(33% - 22px);
+  max-width: none;
 }
 aside:first-of-type:nth-last-of-type(4),
 aside:first-of-type:nth-last-of-type(4) ~ aside {
   width: calc(25% - 23px);
+  max-width: none;
 }
 main {
   display: inline-block;
@@ -260,7 +267,6 @@ section main {
   aside:first-of-type:nth-last-of-type(4) ~ aside,
   aside {
     width: calc(50% - 22px);
-    max-width: none;
   }
   main,
   section main {
@@ -276,7 +282,6 @@ section main {
   aside:first-of-type:nth-last-of-type(4) ~ aside,
   aside {
     width: calc(100% - 22px);
-    max-width: none;
   }
   main,
   section main {
