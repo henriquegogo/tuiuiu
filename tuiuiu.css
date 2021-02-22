@@ -222,6 +222,7 @@ section {
 aside {
   display: inline-block;
   width: calc(33% - 22px);
+  max-width: 300px;
   padding: 5px 10px;
   vertical-align: top;
 }
@@ -233,15 +234,15 @@ aside.quarter {
 }
 main {
   display: inline-block;
-  width: calc(66% - 22px);
+  width: calc(100% - 300px - 44px);
   padding: 5px 10px;
   vertical-align: top;
 }
-:not(section) aside {
-  max-width: 300px;
+section aside {
+  max-width: none;
 }
-:not(section) main {
-  width: calc(100% - 300px - 44px);
+section main {
+  width: calc(66% - 22px);
 }
 
 @media (max-width: 800px) {
@@ -249,18 +250,22 @@ main {
   aside.half,
   aside.quarter {
     width: calc(50% - 22px);
+    max-width: none;
   }
-  main {
+  main,
+  section main {
     width: calc(50% - 22px);
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   aside,
   aside.half,
   aside.quarter {
     width: calc(100% - 22px);
+    max-width: none;
   }
-  main {
+  main,
+  section main {
     width: calc(100% - 22px);
   }
 }
