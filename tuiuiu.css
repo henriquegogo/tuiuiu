@@ -36,6 +36,10 @@ header aside,
 header main {
   vertical-align: middle;
 }
+footer {
+  background: #EEE;
+  border-top: 1px solid #AAA;
+}
 
 nav a {
   margin: 0 1rem;
